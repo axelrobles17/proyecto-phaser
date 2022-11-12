@@ -23,7 +23,9 @@ class Escena extends Phaser.Scene {
     }
 
     create() {
-        this.add.image(400, 300, 'sky'); // crea el fondo de la pantalla
+
+        // crea el fondo de la pantalla
+        this.add.image(400, 300, 'sky'); 
         
         // crea las plataformas y se le asigna un comportamiento estatico en grupo
         this.platforms = this.physics.add.staticGroup();
